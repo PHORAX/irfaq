@@ -1,0 +1,89 @@
+.tx-irfaq-pi1 ul.tx-irfaq-questions-list {
+    margin-bottom: 75px;
+}
+
+.tx-irfaq-pi1 ul li a p.bodytext {
+    margin: 0;
+    display: inline;
+    font-weight: bold;
+}
+
+.tx-irfaq-pi1 ul li a {
+    color: #000;
+    text-decoration: none;
+}
+
+.tx-irfaq-pi1 ul li a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+.tx-irfaq-pi1 .tx-irfaq-answer {
+    margin-bottom: 10px;
+}
+
+.tx-irfaq-pi1 .tx-irfaq-answer h4 p.bodytext {
+    margin: 0;
+    display: inline;
+    font-weight: bold;
+}
+
+.tx-irfaq-pi1 dt p {
+    font-weight: bold;
+    margin: 0;
+    display: inline;
+}
+
+.tx-irfaq-pi1 dd {
+    margin-left: 0;
+}
+
+.tx-irfaq-pi1 dd p {
+    margin-top: 0;
+}
+
+.tx-irfaq-pi1 .additional-info {
+    border-top: 2px solid #e6e6e6;
+    margin-bottom: 10px;
+}
+
+.tx-irfaq-pi1 .irfaq-related-faq, .tx-irfaq-pi1 .irfaq-related-links {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 3px;
+    margin-bottom: 15px;
+}
+
+.tx-irfaq-cleaner {
+    clear: left;
+    height: 1px;
+}
+
+.tx-irfaq-dynheader {
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.tx-irfaq-dynans-hidden {
+    display: none;
+}
+
+.tx-irfaq-dynans-visible {
+    display: inline;
+}
+
+.tx-irfaq-toggle-plus {
+    background: url(/typo3conf/ext/irfaq/Resources/Public/Icons/plus.gif) left no-repeat;
+    padding-left: 15px;
+}
+
+.tx-irfaq-toggle-minus {
+    background: url(/typo3conf/ext/irfaq/Resources/Public/Icons/minus.gif) left no-repeat;
+    padding-left: 15px;
+}
+
+.tx-irfaq-toggle-all-hide, .tx-irfaq-toggle-all-show {
+    background: none;
+    border: none;
+    cursor: pointer;
+}

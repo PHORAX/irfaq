@@ -1,0 +1,225 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>FAQ Example Template</title>
+</head>
+<body>
+<br />
+<br />
+<br />
+<h1>FAQ TEMPLATES</h1>
+<h2>EXAMPLE</h2>
+<br />
+<br />
+<br />
+<pre>
+<strong>Common markers:</strong>
+These are substituted in all news item displaying templates:
+
+<em>Markers:</em>
+FAQ_Q - Question
+FAQ_A - Answer
+FAQ_PM_IMG - the plus / minus icon
+FAQ_CATEGORY - FAQ item category
+TEXT_CATEGORY - Category
+TEXT_EXPERT - Expert
+FAQ_EXPERT - the Name of the Expert
+FAQ_EXPERT_URL - webpage of the expert
+TEXT_ASKED_BY
+ASKED_BY
+RELATED_FAQ - related FAQs (if any)
+RELATED_LINKS - related links (if any)
+</pre>
+<br />
+<br />
+<br />
+<br />
+<hr />
+<br />
+<br />
+<br />
+<h3>TEMPLATE_STATIC</h3>
+<em>This is the template for static FAQ list. Use it when you don't like to have javascript.</em>
+
+<!-- ###TEMPLATE_STATIC### begin
+	This is the template for static FAQ list
+-->
+<div class="tx-irfaq-pi1">
+	<ul class="tx-irfaq-questions-list">
+	<!-- ###QUESTIONS### begin
+		  This is the part of the template substituted with the list of FAQ - questions:
+	-->
+		<!-- ###FAQ### begin
+			Template for a single question
+		-->
+		<li><a href="#irfaq_###FAQ_ID###_###HASH###">###FAQ_Q###</a> ###TEXT_CATEGORY### ###FAQ_CATEGORY###</li>
+		<!-- ###FAQ### end-->
+	<!-- ###QUESTIONS###  end -->
+	</ul>
+
+	<!-- ###ANSWERS### begin
+		  This is the part of the template substituted with the list of faqs:
+	-->
+	<!-- ###FAQ### begin
+		Template for a single item
+	-->
+	<div class="tx-irfaq-answer">
+		<a name="irfaq_###FAQ_ID###_###HASH###"></a>
+		<h4>###FAQ_Q###</h4>
+		###FAQ_A###
+		<div class="additional-info">
+			###TEXT_CATEGORY### ###FAQ_CATEGORY###
+			###TEXT_EXPERT### ###FAQ_EXPERT### ###FAQ_EXPERT_URL###
+			###TEXT_ASKED_BY### ###ASKED_BY###
+			###RELATED_FAQ###
+			###RELATED_LINKS###
+		</div>
+		###RATING###
+	</div>
+	<!-- ###FAQ### end-->
+	<!-- ###ANSWERS###  end -->
+</div>
+<!-- ###TEMPLATE_STATIC### end -->
+
+<br />
+<br />
+<br />
+<br />
+<hr />
+<br />
+<br />
+<br />
+<h3>TEMPLATE_DYNAMIC</h3>
+<em>This is the template for dynamic FAQ list. This will use dhtml (javascript and html)</em>
+
+<!-- ###TEMPLATE_DYNAMIC### begin
+	This is the template for dynamic FAQ list.
+-->
+<div class="tx-irfaq-pi1 tx-irfaq-toggle">
+	<p>
+		<input type="button" class="tx-irfaq-toggle-all-show" value="###TEXT_SHOW###" />
+		/
+		<input type="button" class="tx-irfaq-toggle-all-hide" value="###TEXT_HIDE###" />
+	</p>
+	<dl>
+	<!-- ###CONTENT### begin
+		  This is the part of the template substituted with the list of FAQs:
+	-->
+		<!-- ###FAQ### begin
+			Template for a single FAQ item
+		-->
+		<dt class="tx-irfaq-dynheader tx-irfaq-toggle-plus">
+			###FAQ_Q###
+		</dt>
+		<dd class="tx-irfaq-dynans">
+			###FAQ_A###
+			<div class="additional-info">
+				###TEXT_CATEGORY### ###FAQ_CATEGORY###
+				###TEXT_EXPERT### ###FAQ_EXPERT### ###FAQ_EXPERT_URL###
+				###TEXT_ASKED_BY### ###ASKED_BY###
+				###RELATED_FAQ###
+				###RELATED_LINKS###
+			</div>
+			###RATING###
+		</dd>
+		<!-- ###FAQ### end-->
+	<!-- ###CONTENT###  end -->
+	</dl>
+</div>
+<!-- ###TEMPLATE_DYNAMIC### end -->
+
+<!-- ###TEMPLATE_SEARCH### begin
+	Subpart for the search-form
+-->
+<div class="irfaq-search-form">
+<form method="post" action="###FORM_URL###">
+	<fieldset>
+	<input size="30" maxlength="100" type="text" name="tx_irfaq_faqcontroller[swords]" value="###SWORDS###" />
+	<span class="irfaq-search-form-submit"><input type="submit" name="search" value="###SEARCH_BUTTON###" /></span>
+	</fieldset>
+</form></div>
+<!-- ###TEMPLATE_SEARCH### end -->
+
+<!-- ###TEMPLATE_RELATED_FAQ### begin
+	Subpart for the related faq
+-->
+<div class="irfaq-related-faq-block">
+###TEXT_RELATED_FAQ###
+<ul class="irfaq-related-faq">
+	<!-- ###RELATED_FAQ_ENTRY### begin -->
+	<li><a href="###RELATED_FAQ_ENTRY_HREF###">###RELATED_FAQ_ENTRY_TITLE###</a></li>
+	<!-- ###RELATED_FAQ_ENTRY### end -->
+</ul>
+</div>
+<!-- ###TEMPLATE_RELATED_FAQ### end -->
+
+<!-- ###TEMPLATE_RELATED_LINKS### begin
+	Subpart for the related links
+-->
+<div class="irfaq-related-link-block">
+###TEXT_RELATED_LINKS###
+<ul class="irfaq-related-links">
+	<!-- ###RELATED_LINK_ENTRY### begin -->
+	<li><a href="###RELATED_LINK_ENTRY_HREF###">###RELATED_LINK_ENTRY_TITLE###</a></li>
+	<!-- ###RELATED_LINK_ENTRY### end -->
+</ul>
+</div>
+<!-- ###TEMPLATE_RELATED_LINKS### end -->
+
+<!-- ###TEMPLATE_SINGLE_VIEW### begin
+	Subpart for the related links
+-->
+<div class="tx-irfaq-singleview">
+	<!-- ###FAQ### begin
+		Template for a single item
+	-->
+	<div class="tx-irfaq-answer">
+		<a name="irfaq_###COUNT###_###HASH###"></a>
+		<h4>###FAQ_Q###</h4>
+		###FAQ_A###
+		<div class="additional-info">
+			###TEXT_CATEGORY### ###FAQ_CATEGORY###
+			###TEXT_EXPERT### ###FAQ_EXPERT### ###FAQ_EXPERT_URL###
+			###TEXT_ASKED_BY### ###ASKED_BY###
+			###RELATED_FAQ###
+			###RELATED_LINKS###
+		</div>
+	</div>
+	<!-- ###FAQ### end-->
+	<a href="###BACK_HREF###">&laquo; ###BACK_TEXT###</a>
+</div>
+<!-- ###TEMPLATE_SINGLE_VIEW### end -->
+
+<br />
+<br />
+<br />
+<br />
+<hr />
+<br />
+<br />
+<br />
+<h3>TEMPLATE_STATIC_SEPARATE</h3>
+<em>This is the template for static FAQ list with answers on a different page. Use it when you don't like to have javascript.</em>
+
+<!-- ###TEMPLATE_STATIC_SEPARATE### begin
+	This is the template for static FAQ list
+-->
+<div class="tx-irfaq-pi1">
+	<ul class="tx-irfaq-questions-list">
+	<!-- ###QUESTIONS### begin
+		  This is the part of the template substituted with the list of FAQ - questions:
+	-->
+		<!-- ###FAQ### begin
+			Template for a single question
+		-->
+		<li><a href="###SINGLEVIEW_LINK###">###FAQ_Q###</a> ###TEXT_CATEGORY### ###FAQ_CATEGORY###</li>
+		<!-- ###FAQ### end-->
+	<!-- ###QUESTIONS###  end -->
+	</ul>
+
+</div>
+<!-- ###TEMPLATE_STATIC_SEPARATE### end -->
+
+</body>
+</html>

@@ -1,0 +1,298 @@
+
+2017-06-11 v1.7.11 Leonie Philine Bitto <leonie@netcreators.nl>
+
+	* You can help translate irfaq to your language:
+		https://translation.typo3.org/projects/TYPO3.ext.irfaq/
+
+	The "lang" and "pi1" folders are from the old directory scheme. To date, only Classes/* and Resources/* are relevant.
+
+2017-06-11 v1.7.10 Leonie Philine Bitto <leonie@netcreators.nl>
+
+	* Fixed "Localization file does not exist!" error in new content element wizard, occuring when using
+		a BE language which has no XLIFF translation yet.
+
+		Please help
+			- translate,
+			- migrate to XLF
+			- and migrate to the extbase-style directory scheme
+		at https://translation.typo3.org/nl/TYPO3.ext.irfaq/!
+
+		Thanks to Danilo Caccialanza for reporting.
+
+2017-05-10 v1.7.9 Tania Morales <tania@netcreators.nl>
+
+	* Added versioning handling to tx_irfaq_q. Thanks to Danilo Caccialanza <supercaccia@bluewin.ch>
+
+2017-03-16 v1.7.8 Leonie Philine Bitto <leonie@netcreators.nl>
+
+	* Removed TCA feInterface.
+	* Removed empty TCA palettes.
+	* Removed inline palette definition, causing deprecation log entry:
+	 	'Changed showitem string of TCA table "tx_irfaq_expert" type "0" due to changed field "name".'
+
+2017-03-02 v1.7.7 Leonie Philine Bitto <leonie@netcreators.nl>
+
+	* Migrated language files to XLIFF format.
+
+2017-03-02 v1.7.6 Leonie Philine Bitto <leonie@netcreators.nl>
+
+	* Fix: Categories were not loaded from configured pid_list - only for closest configured page storage_pid.
+	* Fix: Category link used wrong (pi1 rather than faqcontroller) request parameter namespace.
+
+2017-02-20 v1.7.5 Leonie Philine Bitto <leonie@netcreators.nl>
+
+	* Fix: Questions' categories were not shown in the Backend's List view (Category column enabled) - always showed "N/A".
+
+2017-02-09 v1.7.4 Leonie Philine Bitto <leonie@netcreators.nl>
+
+	* Migrated deprecated TCA types field and iconfile definitions, language labels and display conditions.
+
+2017-02-08 v1.7.3 Leonie Philine Bitto <leonie@netcreators.nl>
+
+	* Migrated registration and application of FAQ SysFolder Icon to new TYPO3 7 Icon API.
+
+2017-02-03 v1.7.2 Leonie Philine Bitto <leonie@netcreators.nl>
+
+	* Fixed Wizard Icon class reference.
+
+2017-02-02 v1.7.1 Leonie Philine Bitto <leonie@netcreators.nl>
+
+	* Fixed TCA add, edit and RTE wizard script configurations for TYPO3 7.6 LTS.
+
+2017-02-01 v1.7.0 Leonie Philine Bitto <leonie@netcreators.nl>
+
+	* Breaking change: Restructured from legacy PiBase-style to contemporary extension directory structure.
+		You might need to adjust your TS settings and template.
+
+2017-01-31 v1.6.0 Leonie Philine Bitto <leonie@netcreators.nl>
+
+	* Added TypoScript option for respecting/ignoring system language when listing FAQs: 'faqListRespectSysLanguageUid'.
+		Default: 1 (yes) - do respect the sys_language_uid field. This is not a breaking change.
+
+2016-10-03 v1.5.2 Leonie Philine Bitto <leonie@netcreators.nl>
+
+	* Reformatted according to PSR-2.
+
+2016-10-03 v1.5.1 Leonie Philine Bitto <leonie@netcreators.nl>
+
+	* Replaced PHP4-style "var" property declarations by "protected"/"public" accordingly.
+	* Added missing semicolon in res/toggleFaq.js.
+	* Using getLanguageService() rather than global $LANG in accordance with TYPO3 coding style.
+	* Removed superfluous 'px' from '0px' CSS values.
+	* Removed closing PHP tags at the end of code-only PHP files.
+
+2016-09-29 v1.5.0 Tania Morales <tania@netcreators.nl>
+
+	* Compatibility for TYPO3 7.6
+
+2015-05-14 v1.4.0 Leonie Philine Bitto <leonie@netcreators.nl>
+
+	* Completed migration to TYPO3 6.2, removing all deprecated calls.
+	* Minor code cleanup.
+
+2014-03-19 v1.3.0 Leonie Philine Bitto <leonie@netcreators.nl>
+
+	* Compatibility with TYPO3 6.2.
+
+2014-03-14 v1.2.1 Leonie Philine Bitto <leonie@netcreators.nl>
+
+	* Made irfaq records searchable in the TYPO3 Backend (by defining TCA ctrl 'searchFields').
+	* Marked as compatible up to TYPO3 6.1.
+
+2013-01-09	Frans van der Veen <extensions@netcreators.com>
+
+	* added noconflict + $ initializer to jsfile for Emile Blume
+
+2012-03-22	Tania Morales	<tania@netcreators.com>
+
+	* Replace javascript onclick functionality for jquery toggle
+	* Released version 1.2.0
+
+2011-11-22	Tania Morales	<tania@netcreators.com>
+
+	* Merged changes from forge svn, revision 45330
+	* Released version 1.1.5
+
+2011-09-22	Tania Morales	<tania@netcreators.com>
+
+	* Removed return url parameter for security reasons
+	* Released version 1.1.4
+
+2011-03-21	Michiel Roos <extensions@netcreators.com>
+
+	* Fixed bug #13693: Deprecated functions (thanks to Danierl Minder)
+
+2010-03-09	Michiel Roos <extensions@netcreators.com>
+
+	* Added feature: Show message when no FAQ's are found
+
+2010-03-08	Michiel Roos <extensions@netcreators.com>
+
+	* Fixed bug #6699: Restore faq_id to the id of the faq
+	* Added feature #6696: Configure sorting order of faq items
+	* Fixed bug #3048: Toggle doesn't work with singleOpen
+	* Added feature: Make inclusion of default JS configurable
+
+2008-12-10	Dmitry Dulepov	<dmitry@typo3.org>
+
+	* Added a call to tslib_cObj::lastChanged() to ensure correct "Last-modified" headers for pages with FAQ
+
+2008-11-05	Dmitry Dulepov	<dmitry@typo3.org>
+
+	* Fix: SQL errors if category mode is set to use categories but category list is empty
+
+2008-10-03	Dmitry Dulepov	<dmitry@typo3.org>
+
+	* Additional impovements for XHTML compatibility
+	* Added <fieldset> in the search form
+
+2008-10-02	Dmitry Dulepov	<dmitry@typo3.org>
+
+	* Fixed forge bug #1444: irfaq does not produce XHTML valid output
+
+2008-09-15	Dmitry Dulepov	<dmitry@typo3.org>
+
+	* Added extension updater
+	* Fixed missing </head> in the template
+	* Released version 1.1.1
+
+2008-09-01	Dmitry Dulepov	<dmitry@typo3.org>
+
+	* Fixed: wrong check for missing TS template
+	* Removed duplicate $cObj from pi1 class
+	* Removed restriction to TYPO3 4.2 as highest TYPO3 version
+
+2008-08-30 Martin Holtz <typo3@martinholtz.de>
+
+	* Fixed bug #1150: incorrect sql with emptySearchAtStart
+
+2008-02-29  Michiel Roos  <extensions@netcreators.com>
+
+	* Fixed bug #8122: Toogle doesn't work
+
+2008-02-25	Dmitry Dulepov	<dmitry@typo3.org>
+
+	* Renamed JavaScript functions to have extension id as prefix
+	* Moved all inline CSS styles to CSS classes
+	* Changed expand/collapse in dynamic view to use CSS classes instead of inline style (to be print-friendly)
+	* Commented obsolete TS template named "CSS default styles"
+	* Fixed icon paths: did not expand from constants at some TYPO3 installations
+	* Added hook to page module to display extended information (TYPO3>=4.2)
+
+2008-02-22	Dmitry Dulepov	<dmitry@typo3.org>
+
+	* Added posibility to override sys_language_mode/sys_language_overlay for records
+
+2008-02-01	Dmitry Dulepov	<dmitry@typo3.org>
+
+	* Changed localization to use content.sys_language_overlay option correctly
+	* Updated documentation
+
+2008-01-31	Dmitry Dulepov	<dmitry@typo3.org>
+
+	* Changed to use ratings extension instead of built-in rated feature
+	* Changed inclusion of the plugin to show error message if TS template is not included
+	* Initial work on localization feature
+
+2008-01-19	Dmitry Dulepov	<dmitry@typo3.org>
+
+	* Committed some fies for ratings feature
+	* Changed TYPO3 logo in the manual
+
+2007-12-14	Patrick Broens	<patrick@netcreators.com>
+
+	* Moved icons to folder 'res'
+	* Removed addPItoST43 method and moved constants and setup to static template list
+	* Deleted old unused files
+	* Moved flexform.xml into own folder
+	* Splitted TCA files for each table and moved to TCA folder
+
+2007-12-10	Dmitry Dulepov	<dmitry@typo3.org>
+
+	* Added ratings
+
+2007-12-07	Dmitry Dulepov	<dmitry@typo3.org>
+
+	* Language files moved to translation server
+
+2007-12-06	Dmitry Dulepov	<dmitry@typo3.org>
+
+	* Fixed bug #2225: Labels cannot be overriden via TS
+	* Fixed bug #5219: invalid attribute in javascript
+	* Fixed bug #4642: Wrong syntax in static template
+
+2007-10-01	Dmitry Dulepov	<dmitry@typo3.org>
+
+	* Fixed: "Show all" did not expand all items
+	* Fixed: FireFox displayed collapsed FAQs with indent if CSS styled content is used
+
+2007-09-26	Dmitry Dulepov	<dmitry@typo3.org>
+
+	* Related FAQs are now shown in single view
+
+2007-09-26	Dmitry Dulepov	<dmitry@typo3.org>
+
+	* Added related and related_links field to tx_irfaq_q table
+	* Added TCEmain hook to handle bidirectional relations between FAQ items
+	* Added displaying of related and related_links fields
+	* Documentation updated to list new stdWrap entries for related items
+
+2006-11-08  Patrick Broens  <patrick@netcreators.com>
+	+ Added a language label for show/hide all
+
+2006-10-27  Patrick Broens  <patrick@netcreators.com>
+	~ CSS-styles in static template instead of standard typoscript
+	~ Locallang files to XML
+
+2006-10-24  Patrick Broens  <patrick@netcreators.com>
+
+	~ The answer string was not processed correctly with the parseFunc function from tslib_cObj based on configuration set in "lib.parseFunc_RTE" in the current TypoScript template.
+
+2005-10-24  Ingo Renner  <typo3@ingo-renner.com>
+
+	* FIX fixed bug with category selector, now using cHash. Thanks to Benjamin A. Schmit
+
+2005-10-19  Ingo Renner  <typo3@ingo-renner.com>
+
+	* FIX rendering now works like regular content elements
+
+2005-09-30  Ingo Renner  <typo3@ingo-renner.com>
+
+	* ADD added italian translation
+
+2005-07-18  Ingo Renner  <typo3@ingo-renner.com>
+
+	* FIX fixed bug which resulted in a SQL error when retrieving questions from more than one page
+
+2005-05-20  Ingo Renner  <typo3@ingo-renner.com>
+
+	* CHG XHTML Strict compliant
+
+2005-04-08  Ingo Renner  <typo3@ingo-renner.com>
+
+	* CHG Removed all "unsigned" keywords from ext_tables.sql
+
+2005-02-20 Ingo Renner <typo3@ingo-renner.com>
+	* FIX small bug when using multiple instances of irfaq on one page
+
+2005-02-20 Ingo Renner <typo3@ingo-renner.com>
+	* ADD asked by field
+	* ADD category text modes
+	* FIX RTE transformations now working
+	* CHG manual updated
+	* CHG default css
+	* CHG default template
+	* CHG TCE Forms now use labels of EXT:lang where appropriate
+	* code clean up
+
+
+2005-02-15 Ingo Renner <typo3@ingo-renner.com>
+
+	* ADD dutch translation
+	* ADD category selection by GET vars
+	* ADD show/hide all function
+	* ADD show only one FAQ at a time mode
+	* FIX sorting of categories and questions
+	* CHG Manual
+	* CHG default CSS
+	* Thanks a lot to Ben van't Ende and Rupert Germann for helping out with ideas and programming!!

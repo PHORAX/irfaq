@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2017-03-02T15:57:11Z">
+		<header>
+			<description>Language labels</description>
+			<type>module</type>
+			<fileId>EXT:irfaq/Resources/Private/Language/locallang.xlf</fileId>
+		</header>
+		<body>
+		<trans-unit id="pi1_plus_wiz_description_irfaq">
+			<source>FAQ with dynamic and static list</source>
+		</trans-unit>
+		<trans-unit id="pi1_title_irfaq">
+			<source>Modern FAQ</source>
+		</trans-unit>
+		</body>
+	</file>
+</xliff>

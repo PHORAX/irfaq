@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2017-03-02T15:56:12Z">
+		<header>
+			<description>Language labels</description>
+			<type>module</type>
+			<fileId>EXT:irfaq/Resources/Private/Language/locallang_update.xlf</fileId>
+			<generator>LFEditor</generator>
+		</header>
+		<body>
+		<trans-unit id="errors">
+			<source>Errors while saving data to the database:</source>
+		</trans-unit>
+		<trans-unit id="form_intro">
+			<source>This module will update all irfaq instances from the previous versions to this latest version.</source>
+		</trans-unit>
+		<trans-unit id="replace_empty">
+			<source>Treat all empty values as missing. This will restore old non-empty values even if you already set empty in the record. When unchecked empty existing values are preserved.</source>
+		</trans-unit>
+		<trans-unit id="result">
+			<source>Total irfaq instances: %d. Converted to the new format: %d.</source>
+		</trans-unit>
+		<trans-unit id="submit_button">
+			<source>Check and update now!</source>
+		</trans-unit>
+		</body>
+	</file>
+</xliff>

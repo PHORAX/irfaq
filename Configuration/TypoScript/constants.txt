@@ -1,0 +1,19 @@
+plugin.tx_irfaq_pi1 {
+	# cat=plugin.irfaq/file; type=file[html,htm,tmpl,txt]; label= Template File: HTML-template file for display of faq. See EXT:irfaq/pi/irfaq.tmpl for an example
+	file.templateFile = EXT:irfaq/Resources/Private/Templates/irfaq.tmpl
+
+	# cat=plugin.irfaq/file; type=file[gif,jpg,jpeg,png]; label= Plus Icon for dynamic view
+	file.iconPlus = EXT:irfaq/Resources/Public/Icons/plus.gif
+
+	# cat=plugin.irfaq/file; type=file[gif,jpg,jpeg,png]; label= Minus Icon for dynamic view
+	file.iconMinus = EXT:irfaq/Resources/Public/Icons/minus.gif
+
+	# cat=plugin.irfaq/enable; type=options[only one open item at a time=1,multiple open items at a time=0]; label= View Mode: choose whether a click on an item will collapse all other items and open the clicked or open the clicked item as usual
+	singleOpen = 0
+
+	# cat=plugin.irfaq/enable; type=boolean; label= Enable ratings: Requires "ratings" extension to be loaded and its template included into main TS template
+	enableRatings = 0
+
+	# cat=plugin.irfaq/enable; type=boolean; label=Filter FAQs: Only load questions for current system language.
+	faqListRespectSysLanguageUid = 1
+}

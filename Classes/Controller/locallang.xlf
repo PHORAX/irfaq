@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2017-03-02T15:56:42Z">
+		<header>
+			<type>module</type>
+			<fileId>EXT:irfaq/pi1/locallang.xlf</fileId>
+			<generator>LFEditor</generator>
+		</header>
+		<body>
+		<trans-unit id="back">
+			<source>Go back</source>
+		</trans-unit>
+		<trans-unit id="fold_faq">
+			<source>fold faq</source>
+		</trans-unit>
+		<trans-unit id="noResult">
+			<source>No FAQ's found.</source>
+		</trans-unit>
+		<trans-unit id="noSuchEntry">
+			<source>Sorry, could not find such FAQ entry.</source>
+		</trans-unit>
+		<trans-unit id="no_ts_template">
+			<source>Error (irfaq): extension's TypoScript template is not included. Please, go to Web&gt;Template and fix this error</source>
+		</trans-unit>
+		<trans-unit id="searchButtonLabel">
+			<source>Search</source>
+		</trans-unit>
+		<trans-unit id="text_asked_by">
+			<source>Question asked by:</source>
+		</trans-unit>
+		<trans-unit id="text_category">
+			<source>Category:</source>
+		</trans-unit>
+		<trans-unit id="text_expert">
+			<source>Expert:</source>
+		</trans-unit>
+		<trans-unit id="text_hide">
+			<source>Hide all</source>
+		</trans-unit>
+		<trans-unit id="text_related_faq">
+			<source>Related entries:</source>
+		</trans-unit>
+		<trans-unit id="text_related_links">
+			<source>Related links:</source>
+		</trans-unit>
+		<trans-unit id="text_show">
+			<source>Show all</source>
+		</trans-unit>
+		</body>
+	</file>
+</xliff>

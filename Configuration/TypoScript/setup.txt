@@ -1,0 +1,67 @@
+plugin.tx_irfaq_pi1 = USER
+plugin.tx_irfaq_pi1 {
+	includeLibs = EXT:irfaq/Classes/Controller/FaqController.php
+	userFunc = Netcreators\Irfaq\Controller\FaqController->main
+
+	defaultCode = dynamic
+
+	# html template
+	templateFile = {$plugin.tx_irfaq_pi1.file.templateFile}
+
+	# plus/minus icons for dynamic view
+	iconMinus = {$plugin.tx_irfaq_pi1.file.iconMinus}
+	iconPlus = {$plugin.tx_irfaq_pi1.file.iconPlus}
+
+	# dynamic view behavior
+	singleOpen = {$plugin.tx_irfaq_pi1.singleOpen}
+
+	# pid_list is the page, where your faq db-records are stored
+	pid_list.field = pages
+
+	# you can also leave the "starting Point" field in the content element empty and
+	# define the pid_list in this way:
+	# pid_list = 12,13  # comma separated list of pages
+
+	# categoryModes are: 0=display all categories, 1=display selected categories, -1=display deselected categories
+	categoryMode = 0
+	#categorySelection = 0
+
+	emptySearchAtStart = 1
+	searchFieldList = q,a
+	searchPid =
+
+	# Sorting order of the FAQs can be: sorting, q (question), q_from (Asked by), expert or any comma separated list of values like: question,expert,sorting
+	orderBy = sorting
+
+	answer_stdWrap.wrap =
+	question_stdWrap.wrap =
+	text_expert_stdWrap.wrap = <br /> |
+	expert_stdWrap.wrap =
+	expert_stdWrap.typolink.parameter.data = register:faqExpertEmail
+	expertemail_stdWrap.wrap =
+	experturl_stdWrap.wrap = (|)
+	text_asked_by_stdWrap.wrap = <br /> |
+	asked_by_stdWrap.wrap =
+	category_stdWrap.wrap =
+	no_result_stdWrap.wrap = <p> | </p>
+	related_entries_stdWrap.wrap =
+	related_links_stdWrap.wrap =
+	catTextMode = 2
+
+	general_stdWrap.parseFunc >
+	# Commented parseFunc because it adds <p class="bodytext"> wraps, which is not valid everywhere
+	#    general_stdWrap.parseFunc < tt_content.text.20.parseFunc
+
+	enableRatings = {$plugin.tx_irfaq_pi1.enableRatings}
+
+	faqListRespectSysLanguageUid = {$plugin.tx_irfaq_pi1.faqListRespectSysLanguageUid}
+}
+
+# Additions to comments extension
+plugin.tx_comments_pi1.prefixToTableMap.tx_irfaq_pi1 = tx_irfaq_q
+
+page.includeCSS.tx_irfaq = EXT:irfaq/Resources/Public/Stylesheets/styles.css
+page.includeJSFooter.tx_irfaq = EXT:irfaq/Resources/Public/JavaScript/toggleFaq.js
+
+
+tt_content.list.20.irfaq_pi1 = < plugin.tx_irfaq_pi1

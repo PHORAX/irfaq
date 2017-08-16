@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2017-03-02T15:57:50Z">
+		<header>
+			<description>Language labels</description>
+			<type>database</type>
+			<fileId>EXT:irfaq/Resources/Private/Language/locallang_db.xlf</fileId>
+			<generator>LFEditor</generator>
+		</header>
+		<body>
+		<trans-unit id="tt_content.list_type_pi1">
+			<source>Modern FAQ</source>
+		</trans-unit>
+		<trans-unit id="tx_irfaq.pi_flexform.category_selection">
+			<source>Category selection:</source>
+		</trans-unit>
+		<trans-unit id="tx_irfaq.pi_flexform.category_selection_DontShowSelected">
+			<source>Do NOT show items with selected categories</source>
+		</trans-unit>
+		<trans-unit id="tx_irfaq.pi_flexform.category_selection_notCategorized">
+			<source>[not categorized]</source>
+		</trans-unit>
+		<trans-unit id="tx_irfaq.pi_flexform.category_selection_showAll">
+			<source>Show all (don't care about selection below)</source>
+		</trans-unit>
+		<trans-unit id="tx_irfaq.pi_flexform.category_selection_showSelected">
+			<source>Show items with selected categories</source>
+		</trans-unit>
+		<trans-unit id="tx_irfaq.pi_flexform.emptySearchAtStart">
+			<source>Empty search at start</source>
+		</trans-unit>
+		<trans-unit id="tx_irfaq.pi_flexform.enableRatings">
+			<source>Enable ratings (requires extension 'ratings'):</source>
+		</trans-unit>
+		<trans-unit id="tx_irfaq.pi_flexform.no_view">
+			<source>not configured!!!</source>
+		</trans-unit>
+		<trans-unit id="tx_irfaq.pi_flexform.searchPid">
+			<source>Redirect to page</source>
+		</trans-unit>
+		<trans-unit id="tx_irfaq.pi_flexform.select_deselect_categories">
+			<source>Category mode:</source>
+		</trans-unit>
+		<trans-unit id="tx_irfaq.pi_flexform.sheet_categories">
+			<source>Categories</source>
+		</trans-unit>
+		<trans-unit id="tx_irfaq.pi_flexform.sheet_general">
+			<source>General</source>
+		</trans-unit>
+		<trans-unit id="tx_irfaq.pi_flexform.sheet_search">
+			<source>Search</source>
+		</trans-unit>
+		<trans-unit id="tx_irfaq.pi_flexform.sorting">
+			<source>Sort order</source>
+		</trans-unit>
+		<trans-unit id="tx_irfaq.pi_flexform.sorting_expert">
+			<source>Expert</source>
+		</trans-unit>
+		<trans-unit id="tx_irfaq.pi_flexform.sorting_q">
+			<source>Question</source>
+		</trans-unit>
+		<trans-unit id="tx_irfaq.pi_flexform.sorting_q_from">
+			<source>Asked by</source>
+		</trans-unit>
+		<trans-unit id="tx_irfaq.pi_flexform.sorting_sorting">
+			<source>Manual sorting order</source>
+		</trans-unit>
+		<trans-unit id="tx_irfaq.pi_flexform.sorting_ts">
+			<source>Defined in TypoScript</source>
+		</trans-unit>
+		<trans-unit id="tx_irfaq.pi_flexform.view_dynamic">
+			<source>Dynamic view with dhtml (answers folding out)</source>
+		</trans-unit>
+		<trans-unit id="tx_irfaq.pi_flexform.view_search">
+			<source>Search form</source>
+		</trans-unit>
+		<trans-unit id="tx_irfaq.pi_flexform.view_static">
+			<source>Static view with answers below of question list</source>
+		</trans-unit>
+		<trans-unit id="tx_irfaq.pi_flexform.view_static_separate">
+			<source>Static view with answers on a separate page</source>
+		</trans-unit>
+		<trans-unit id="tx_irfaq.pi_flexform.what_to_display">
+			<source>What to display:</source>
+		</trans-unit>
+		<trans-unit id="tx_irfaq.sysfolder">
+			<source>Modern FAQ</source>
+		</trans-unit>
+		<trans-unit id="tx_irfaq_cat">
+			<source>FAQ category</source>
+		</trans-unit>
+		<trans-unit id="tx_irfaq_expert">
+			<source>FAQ expert</source>
+		</trans-unit>
+		<trans-unit id="tx_irfaq_expert.name">
+			<source>Name:</source>
+		</trans-unit>
+		<trans-unit id="tx_irfaq_expert.url">
+			<source>URL:</source>
+		</trans-unit>
+		<trans-unit id="tx_irfaq_q">
+			<source>FAQ</source>
+		</trans-unit>
+		<trans-unit id="tx_irfaq_q.a">
+			<source>Answer:</source>
+		</trans-unit>
+		<trans-unit id="tx_irfaq_q.comments_closetime">
+			<source>Close commenting at (requires extension 'comments'):</source>
+		</trans-unit>
+		<trans-unit id="tx_irfaq_q.disable_comments">
+			<source>Disable comments (requires extension 'comments'):</source>
+		</trans-unit>
+		<trans-unit id="tx_irfaq_q.enable_ratings">
+			<source>Enable ratings (requires extension 'ratings'):</source>
+		</trans-unit>
+		<trans-unit id="tx_irfaq_q.expert">
+			<source>Expert:</source>
+		</trans-unit>
+		<trans-unit id="tx_irfaq_q.extra_tab">
+			<source>Extras</source>
+		</trans-unit>
+		<trans-unit id="tx_irfaq_q.q">
+			<source>Question:</source>
+		</trans-unit>
+		<trans-unit id="tx_irfaq_q.q_from">
+			<source>Asked by:</source>
+		</trans-unit>
+		<trans-unit id="tx_irfaq_q.related">
+			<source>Related entries:</source>
+		</trans-unit>
+		<trans-unit id="tx_irfaq_q.related_edit">
+			<source>Edit selected entry</source>
+		</trans-unit>
+		<trans-unit id="tx_irfaq_q.related_links">
+			<source>Related links (one per line):</source>
+		</trans-unit>
+		<trans-unit id="tx_irfaq_q.related_new">
+			<source>Create new FAQ and add here</source>
+		</trans-unit>
+		</body>
+	</file>
+</xliff>
