@@ -1,0 +1,23 @@
+{
+	"name": "phorax/irfaq",
+	"type": "typo3-cms-extension",
+	"description": "FAQ frontend plugin with dynamic or static view which will merge and improve functionality of EXT:faq and EXT:faq_plus into a modern look",
+	"homepage": "https://github.com/PHORAX/irfaq",
+	"license": [
+		"GPL-2.0"
+	],
+	"require": {
+		"php": "~7.0.0|~7.1.0",
+		"typo3/cms-core": ">=7.6.0,<9.0"
+	},
+	"autoload": {
+		"psr-4": {
+			"Netcreators\\Irfaq\\": "Classes"
+		},
+		"classmap": [ "class.ext_update.php" ]
+	},
+	"replace": {
+		"irfaq": "self.version",
+		"typo3-ter/irfaq": "self.version"
+	}
+}
