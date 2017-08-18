@@ -11,15 +11,15 @@ if (!defined('TYPO3_MODE')) {
 
 
 
-$TCA['tt_content']['types']['list']['subtypes_excludelist'][$_EXTKEY . '_pi1'] = 'layout,select_key,pages';
-$TCA['tt_content']['types']['list']['subtypes_addlist'][$_EXTKEY . '_pi1'] = 'pi_flexform';
+$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$_EXTKEY . '_pi1'] = 'layout,select_key,pages';
+$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$_EXTKEY . '_pi1'] = 'pi_flexform';
 
 
 
 // Adding sysfolder icon
-$TCA['pages']['columns']['module']['config']['items'][$_EXTKEY]['0']
+$GLOBALS['TCA']['pages']['columns']['module']['config']['items'][$_EXTKEY]['0']
     = 'LLL:EXT:irfaq/Resources/Private/Language/locallang_db.xlf:tx_irfaq.sysfolder';
-$TCA['pages']['columns']['module']['config']['items'][$_EXTKEY]['1'] = $_EXTKEY;
+$GLOBALS['TCA']['pages']['columns']['module']['config']['items'][$_EXTKEY]['1'] = $_EXTKEY;
 
 
 
